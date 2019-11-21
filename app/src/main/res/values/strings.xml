@@ -3,4 +3,15 @@
     <string name="my_test_question">My Test Question</string>
     <string name="TrueText">True</string>
     <string name="FalseText">False</string>
+    <string name="Q1">Yoyou you1</string>
+    <string name="Q2">Yoyou you2</string>
+    <string name="Q3">Yoyou you3</string>
+    <string name="Q4">Yoyou you4</string>
+    <string name="Q5">Yoyou you5</string>
+    <string name="Q6">Yoyou you6</string>
+    <string name="Q7">Yoyou you7</string>
+    <string name="Q8">Yoyou you8</string>
+    <string name="NextQ">Next Question</string>
+    <string name="nextbuttoncd">next button</string>
+
 </resources>

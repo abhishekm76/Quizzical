@@ -23,7 +23,7 @@
         android:textSize="16sp"
         android:textColor="@android:color/white"
         android:id="@+id/answer_TextView"
-        android:hint="@string/my_test_question"/>
+        android:hint="@string/Q1"/>
 
     <LinearLayout
         android:orientation="horizontal"
@@ -45,6 +45,15 @@
 
 
     </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/nextButton"
+        android:contentDescription="@string/NextQ"
+        android:src="@android:drawable/ic_media_next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
 
 </LinearLayout>
 
