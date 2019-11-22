@@ -14,6 +14,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private Button falseButton;
     private Button trueButton;
     private ImageButton nextQ;
+    private ImageButton prevQ;
 
     private int currentIndex =0;
 
@@ -40,12 +41,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         trueButton=findViewById(R.id.true_button);
         nextQ=findViewById(R.id.nextButton);
         questionTextView=findViewById(R.id.answer_TextView);
-
+        prevQ=findViewById(R.id.prevButton);
 
 
         falseButton.setOnClickListener(this);
         trueButton.setOnClickListener(this);
         nextQ.setOnClickListener(this);
+        prevQ.setOnClickListener(this);
     }
 
     @Override
@@ -69,7 +71,19 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 updateQuestion();
                 break;
 
+            case R.id.prevButton:
+
+                currentIndex -= 1 ;
+                if (currentIndex == -1){
+                    currentIndex=questionBank.length-1;
+                }
+                prevQuestion();
+                break;
         }
+    }
+
+    private void prevQuestion() {
+        questionTextView.setText(questionBank[currentIndex].getAnswerID());
     }
 
     private void updateQuestion(){
@@ -97,4 +111,4 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 // TODO: 21-11-2019 change backgroud
 // TODO: 21-11-2019 change image button for icon on home page
 // TODO: 21-11-2019 change button for next
-// TODO: 21-11-2019 add a previous question functionality  
+//  TODO: 21-11-2019 add a previous question functionality
